@@ -2,42 +2,35 @@ const mongoose = require("../database")
 
 
 
+
+
 const FamiliaSchema = new mongoose.Schema({
 
+    cpfPretendente: {
+        type: String,
+
+    },
 
     pessoas: [{
-
 
             nome: {
                 type: String,
             },
-
-
-            cpf: {
+            dataDeNascimento: {
                 type: String,
-            },
-
-            idade: {
-                type: Number,
 
 
             },
-
-
             tipo: {
 
                 type: String,
 
             },
-
-
-
         }
 
 
-
-
     ],
+
 
     rendaTotal: {
         type: Number,
@@ -47,12 +40,12 @@ const FamiliaSchema = new mongoose.Schema({
     data_Inscricao: {
 
         type: Date,
-        default: new Date().toLocaleDateString("pt-br")
+        default: Date.now
     }
 
-})
+});
 
 const Familia = mongoose.model('Familia', FamiliaSchema)
 
 
-module.exports = Familia
+module.exports = Familia;
