@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({
     extended: false
 }))
 
-require('./controllers/familiaController')(app)
+require('./controllers/cadastroFamiliaController')(app)
 require('./controllers/contempladorController')(app)
 
 

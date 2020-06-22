@@ -15,6 +15,31 @@ router.get('/register', async (req, res) => {
 
 })
 
+router.get('/register/contemplados', async (req, res) => {
+
+
+    try {
+
+
+
+
+        const {
+            contemplado
+        } = req.body
+
+        res.json(await Familia.find({
+            contemplado
+        }))
+
+
+
+    } catch (error) {
+        res.status(500).send(`Erro ao buscar familias: ${error}`)
+    }
+
+})
+
+
 
 router.put('/register', async (req, res) => {
 
