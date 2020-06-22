@@ -11,6 +11,21 @@ const FamiliaSchema = new mongoose.Schema({
 
     },
 
+    cpfConjuge: {
+        type: String,
+    },
+
+    quantidadeDependentes: {
+        type: Number
+    },
+
+    idadePretendente: {
+        type: Number
+    },
+
+
+
+
     pessoas: [{
 
             nome: {
@@ -41,11 +56,24 @@ const FamiliaSchema = new mongoose.Schema({
 
         type: Date,
         default: Date.now
+    },
+
+    pontuacao: {
+        type: Number,
+        default: 0
+    },
+
+    contemplado: {
+
+        type: Boolean,
+        default: false,
+
+
     }
 
 });
 
-const Familia = mongoose.model('Familia', FamiliaSchema)
+const Familia = mongoose.model('Familia', FamiliaSchema, 'familias')
 
 
 module.exports = Familia;

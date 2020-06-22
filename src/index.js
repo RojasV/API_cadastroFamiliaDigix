@@ -9,6 +9,7 @@ app.use(bodyParser.urlencoded({
 }))
 
 require('./controllers/familiaController')(app)
+require('./controllers/contempladorController')(app)
 
 
 app.listen(3000, () => {
