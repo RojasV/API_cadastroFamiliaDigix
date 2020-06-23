@@ -6,8 +6,8 @@ estudei bastante e procurei oferecer o melhor de mim nesse tempo, utilizando das
 ### DESCRIÇÃO DA SOLUÇÃO:
 
 Como mostra o fluxograma, criei dois repositórios para duas API's que rodam em portas distintas. Por que 2 API's? Bom, pensei em um fluxo de trabalho com esse software
-que pudesse continuar caso alguma parte dele precisasse parar para manutenção, portanto fiz uma API para cadastro e pontuação da família pretendente
-e uma API para contemplamento e monitoramento de contemplados se alimentando dos mesmo banco de dados (Para simular um database eu utilizei o MongoDB,
+que pudesse continuar caso alguma parte dele precisasse parar para manutenção, portanto fiz uma API para cadastro e pontuação da família pretendente [(Link para o repositório da API de cadastramento e pontuação)](https://github.com/AI-Vlad/API_cadastroFamiliaDigix)
+e uma API para contemplamento e monitoramento de contemplados [(Link para o repositório da API de contemplamento e monitoramento de contemplados)](https://github.com/AI-Vlad/API_contemplamentoDigix), se alimentando dos mesmo banco de dados (Para simular um database eu utilizei o MongoDB,
 que estarei postando link para instalação logo abaixo. Para simular às requisições utilizei o software Imsomnia, que me exibe todas requisições que eu faço em formato JSON (link segue abaixo também).
 Para visualizar os dados de forma mais estética e ordenar às família de acordo com suas pontuações eu utilizei à ferramenta DBcompass(MongoDB). Os códigos podem ser testados depois de instaladas todas dependências (seguem os nomes das mesmas abaixo) e rodado o comando nodemon src/index.js no terminal do seu editor de código.
 
